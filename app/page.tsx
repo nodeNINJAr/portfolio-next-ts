@@ -10,7 +10,9 @@ const home = () => {
        <Header/>
         {/* main */}
           <main className='bg-[#ffffff]'>
-              <section className='containe w-10/12 mx-auto py-28'><MyServices/></section>
+            {/* my services */}
+              <section className='container w-10/12 mx-auto py-28'><MyServices/></section>
+              {/*  */}
           </main>
        {/* footer */}
        <Footer/>
