@@ -7,11 +7,11 @@ const home = () => {
   return (
    <>
    {/* header */}
-       <Header/>
+        <header><Header/></header>
         {/* main */}
           <main className='bg-[#ffffff]'>
             {/* my services */}
-              <section className='container w-10/12 mx-auto py-28'><MyServices/></section>
+              <section className='container w-10/12 mx-auto py-28 font-Helvetica'><MyServices/></section>
               {/*  */}
           </main>
        {/* footer */}

@@ -65,11 +65,11 @@ const MyServices = () => {
   return (
      <div>
         {/* top part */}
-         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 font-Roboto'>
+         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 font-Helvetica'>
             {/* inner left content */}
              <div>
-                <p className='text-[#ff9330] font-Comic font-semibold text-2xl'>Services</p>
-                 <h2 className='text-black font-Roboto text-[3.5em] leading-14'>My specialties</h2>
+                <p className='text-[#ff9330] font-Helvetica font-semibold text-2xl'>Services</p>
+                 <h2 className='text-black font-Helvetica text-[3.5em] leading-14'>My specialties</h2>
              </div>
              {/* inner right content */}
                <div>
@@ -81,7 +81,7 @@ const MyServices = () => {
                <div className='col-span-3 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4'>
                 {
                   myServices.map(service=>(
-                        <div className='cursor-pointer group bg-[#F5F5F5] col-span-1 p-5 rounded-lg space-y-6 hover:bg-white hover:drop-shadow-lg'>
+                        <div key={service?.id} className='cursor-pointer group bg-[#F5F5F5] col-span-1 p-5 rounded-lg space-y-6 hover:bg-white hover:drop-shadow-lg'>
                             <div className=' w-10 h-10 text-black bg-white p-2 rounded-full shadow-xs group-hover:bg-[#F5F5F5] transition-all ease-in duration-200'>{service?.icon}</div>
                             <div className='flex justify-baseline items-end gap-4'>
                                <h3 className='text-[#333333] text-[1rem] font-semibold group-hover:text-[#FF9330]'>{service?.title}</h3>
